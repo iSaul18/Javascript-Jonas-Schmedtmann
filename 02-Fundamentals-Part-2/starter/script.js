@@ -329,8 +329,18 @@
 const jonas = {
     firstName: "Jonas",
     lastName: "",
-    age: 2037 - 1991,
+    birthYear: 2037 - 1991,
     job: "teacher",
     friends: ["Michael", "Peter", "Steven"],
+    hasDriveLicense: true,
+    calAge: function (birthYear) {
+      return 2037 - birthYear;
+    }
   };
+
+  const privat = jonas.calAge(1991);
+  const privats = jonas['calAge'](1991);
+
+  console.log(privats);
+  console.log(privat);
 
