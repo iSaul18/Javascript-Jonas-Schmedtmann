@@ -333,14 +333,17 @@ const jonas = {
     job: "teacher",
     friends: ["Michael", "Peter", "Steven"],
     hasDriveLicense: true,
-    calAge: function (birthYear) {
-      return 2037 - birthYear;
+
+    // calAge: function (birthYear) {
+    //   return 2037 - birthYear;
+    // }
+
+    calAge: function () {
+      return 2037 - this.birthYear;
     }
   };
 
-  const privat = jonas.calAge(1991);
-  const privats = jonas['calAge'](1991);
+console.log(jonas.calAge());
+console.log(jonas['calAge']());
 
-  console.log(privats);
-  console.log(privat);
 
