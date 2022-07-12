@@ -744,3 +744,92 @@
 
 
 // **********************************************
+
+// console.log('Levantar pesas, repeticion 1');
+// console.log('levantar pesas, repeticion 2');
+// console.log('levantar pesas, repeticion 3');
+// console.log('levantar pesas, repeticion 4');
+// console.log('levantar pesas, repeticion 5');
+// console.log('levantar pesas, repeticion 6');
+// console.log('levantar pesas, repeticion 7');
+// console.log('levantar pesas, repeticion 8');
+// console.log('levantar pesas, repeticion 9');
+// console.log('levantar pesas, repeticion 10');
+
+// for(let rep = 1; rep <= 10 ;rep ++) {
+//   console.log(`Levantar pesas, repeticion ${rep}`);
+
+// }
+
+// *****************************************
+// 'user strict';
+
+// const jonasArray = [
+//       'Jonas',
+//       'Schmedtmann',
+//       2037 - 1991,
+//       'teacher',
+//       ['Michael', 'Peter', 'Steven'],
+//       true
+//   ];
+
+// const types = [];
+// const types2 = [];
+// // const objetoPrueba = {
+
+// // };
+
+// for(let i = 0; i < jonasArray.length ; i++) {
+
+//   types.push(typeof jonasArray[i])
+
+//   types2[i] = typeof jonasArray[i];
+
+//   // objetoPrueba[i] = typeof jonasArray[i]; 
+// }
+
+// console.log(types);
+// console.log(types2);
+// // console.log(objetoPrueba);
+
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for(a = 0; a < years.length ; a++) {
+  
+//   ages.push(2037 - years[a]);
+// }
+
+// console.log(ages);
+
+// Break and Continue
+
+// console.log('--------------------------------');
+
+// for(let i = 0; i < jonasArray.length ; i++) {
+
+//   console.log(types);
+
+//   if (typeof jonasArray[i] !== 'string' ) break;
+
+//   console.log(jonasArray[i],typeof jonasArray[i]);
+
+// }
+
+// const saulArray = [16, 20, 'hola', 21, 'jose' ];
+
+// for (let b = 0; b < saulArray.length; b++) {
+//   if(typeof saulArray[b] !== 'number') continue;
+
+//   console.log(saulArray[b], typeof saulArray[b]);
+// }
+
+
+// const edadesHermanos = ['erick', 13, 'lucia', 20, 'saul', 18]
+
+// for(let repetir = 0; repetir < edadesHermanos.length; repetir++) {
+//   if (typeof edadesHermanos[repetir] !== 'number') continue;
+
+//   console.log(edadesHermanos[repetir], typeof edadesHermanos[repetir]);
+// }
