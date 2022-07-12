@@ -707,41 +707,40 @@
 
 // Coding Challenge
 
-'user strict'
+// 'user strict'
 
-const calBMI = function() {
-  this.BMI = this.mass / this.tall **2;
+// const mark = {
+//   fullname: 'Mark Miller',
+//   mass: 78,
+//   tall: 1.69,
 
-  return this.BMI;
-}
+//   calBMI: function() {
+//     this.BMI = this.mass / this.tall **2;
 
-const mark = {
-  mass: 78,
-  tall: 1.69,
+//     return this.BMI;
+//   }
+// };
 
-  calBMI: function() {
-    this.BMI = this.mass / this.tall **2;
+// const jhon = {
+//   fullname: 'Jhon Smith',
+//   mass: 92,
+//   tall: 1.95,
+//   calBMI: function() {
+//     this.BMI = this.mass / this.tall **2;
 
-    return this.BMI;
-  }
-};
+//     return this.BMI;
+//   }
+// };
 
-const jhon = {
-  mass: 92,
-  tall: 1.95,
-  calBMI: function() {
-    this.BMI = this.mass / this.tall **2;
+// console.log(` Mark(${mark.calBMI()}) vs Jhon(${jhon.calBMI()})`);
 
-    return this.BMI;
-  }
-};
+// if (mark.BMI > jhon.BMI) {
+//   console.log(`${mark.fullname} tiene más BMI que ${jhon.fullname}`);
+// } else if (mark.BMI < jhon.BMI) {
+//   console.log(`${jhon.fullname} tiene más BMI que ${mark.fullname}`);
+// } else {
+//   console.log(`${jhon.fullname} y ${mark.fullname} tienen el mismo BMI`);
+// }
 
-console.log(` Mark(${mark.calBMI()}) vs Jhon(${jhon.calBMI()})`);
 
-if (mark.BMI > jhon.BMI) {
-  console.log(`Mark tiene más BMI que Jhon`);
-} else if (mark.BMI < jhon.BMI) {
-  console.log(`Jhon tiene más BMI que Mark`);
-} else {
-  console.log(`Jhon y Mark tienen el mismo BMI`);
-}
+// **********************************************
