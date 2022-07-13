@@ -934,41 +934,41 @@
 // Coding Callenge
 
 // Definir
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-const tips = [];
-const totals = [];
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
 
-// Determinar la Propina
-const calcTip = (bill) =>
-  bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// // Determinar la Propina
+// const calcTip = (bill) =>
+//   bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
-// Añadir la Propina y el Total
-for (let rep = 0; rep < bills.length; rep++) {
-  let inserTips = calcTip(bills[rep]);
-  tips.push(inserTips);
+// // Añadir la Propina y el Total
+// for (let rep = 0; rep < bills.length; rep++) {
+//   let inserTips = calcTip(bills[rep]);
+//   tips.push(inserTips);
 
-  let insertTotals = inserTips + bills[rep];
-  totals.push(insertTotals);
-}
+//   let insertTotals = inserTips + bills[rep];
+//   totals.push(insertTotals);
+// }
 
-// Determinar Promedio de Bills, tips, totals
-const calAverage = function (arr) {
-  let valor = 0;
+// // Determinar Promedio de Bills, tips, totals
+// const calAverage = function (arr) {
+//   let valor = 0;
 
-  for (let rep = 0; rep < arr.length; rep++) {
-    valor = valor + arr[rep];
-  }
+//   for (let rep = 0; rep < arr.length; rep++) {
+//     valor = valor + arr[rep];
+//   }
 
-  valor = valor / arr.length;
+//   valor = valor / arr.length;
 
-  return valor;
-};
+//   return valor;
+// };
 
-// Mostrar
-console.log(`Bills: [${bills}]`);
-console.log(`Tips: [${tips}]`);
-console.log(`Totals [${totals}]`);
+// // Mostrar
+// console.log(`Bills: [${bills}]`);
+// console.log(`Tips: [${tips}]`);
+// console.log(`Totals [${totals}]`);
 
-console.log(`Promedio de Bills: ${calAverage(bills)}`);
-console.log(`Promedio de Tips: ${calAverage(tips)}`);
-console.log(`Promedio de Totals: ${calAverage(totals)}`);
+// console.log(`Promedio de Bills: ${calAverage(bills)}`);
+// console.log(`Promedio de Tips: ${calAverage(tips)}`);
+// console.log(`Promedio de Totals: ${calAverage(totals)}`);
