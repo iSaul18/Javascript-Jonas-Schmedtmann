@@ -833,3 +833,52 @@
 
 //   console.log(edadesHermanos[repetir], typeof edadesHermanos[repetir]);
 // }
+
+// const saulArray = [16, 20, 'hola', 21, 'jose'];
+
+// for (let i = 0; i < saulArray.length; i++) {
+//  if (typeof saulArray[i] !== 'number') break;
+
+//  console.log(saulArray[i], typeof saulArray[i]);
+// }
+
+// ***************************
+
+// const jonas = [
+//       'Jonas',
+//       'Schmedtmann',
+//       2037 - 1991,
+//       'teacher',
+//       ['Michael', 'Peter', 'Steven'],
+//       true
+//   ];
+
+// for(let repetida = jonas.length-1;  repetida >= 0 ; repetida--) {
+//   console.log(repetida ,jonas[repetida]);
+// }
+
+// for(let exercise = 1; exercise <= 3; exercise++) {
+//   console.log(`Starting exercise ${exercise}`);
+
+//     for(let exercise1 = 1; exercise1 <= 5 ; exercise1++){
+//       console.log(`Ejercicio ${exercise}: veces repetidas ${exercise1}`);
+//   }
+// }
+
+
+// for(let exercise = 1; exercise <= 3; exercise++) {
+  
+//   console.log(`Starting exercise ${exercise}`);
+  
+//     for(let exercise1 = 1; exercise === 1 && exercise1 <= 5 ; exercise1++){
+//       console.log(`Ejercicio ${exercise}, veces repetidas ${exercise1}]`);
+//     }
+
+//     for(let exercise2 = 1; exercise === 2 &&  exercise2 <= 5; exercise2++){
+//       console.log(`Ejercicio ${exercise}, veces repetidas ${exercise2}]`)
+//     }
+
+//       for(let exercise3 = 1; exercise === 3 &&  exercise3 <= 5; exercise3++){
+//         console.log(`Ejercicio ${exercise}, veces repetidas ${exercise3}]`);
+//     }
+// }
