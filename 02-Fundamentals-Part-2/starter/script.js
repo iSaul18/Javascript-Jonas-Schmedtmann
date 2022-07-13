@@ -1,4 +1,3 @@
-
 // 'use strict';
 
 // let hasDriversLicense = false;
@@ -346,7 +345,6 @@
 
 // console.log(jonas.calAge());
 // console.log(jonas['calAge']());
-
 
 // // =======
 // 'use strict';
@@ -742,7 +740,6 @@
 //   console.log(`${jhon.fullname} y ${mark.fullname} tienen el mismo BMI`);
 // }
 
-
 // **********************************************
 
 // console.log('Levantar pesas, repeticion 1');
@@ -785,19 +782,18 @@
 
 //   types2[i] = typeof jonasArray[i];
 
-//   // objetoPrueba[i] = typeof jonasArray[i]; 
+//   // objetoPrueba[i] = typeof jonasArray[i];
 // }
 
 // console.log(types);
 // console.log(types2);
 // // console.log(objetoPrueba);
 
-
 // const years = [1991, 2007, 1969, 2020];
 // const ages = [];
 
 // for(a = 0; a < years.length ; a++) {
-  
+
 //   ages.push(2037 - years[a]);
 // }
 
@@ -824,7 +820,6 @@
 
 //   console.log(saulArray[b], typeof saulArray[b]);
 // }
-
 
 // const edadesHermanos = ['erick', 13, 'lucia', 20, 'saul', 18]
 
@@ -865,11 +860,10 @@
 //   }
 // }
 
-
 // for(let exercise = 1; exercise <= 3; exercise++) {
-  
+
 //   console.log(`Starting exercise ${exercise}`);
-  
+
 //     for(let exercise1 = 1; exercise === 1 && exercise1 <= 5 ; exercise1++){
 //       console.log(`Ejercicio ${exercise}, veces repetidas ${exercise1}]`);
 //     }
@@ -882,3 +876,99 @@
 //         console.log(`Ejercicio ${exercise}, veces repetidas ${exercise3}]`);
 //     }
 // }
+
+// *********************************
+
+// Ciclo While vs Ciclo For
+
+// for (let exercise = 1; exercise <= 10; exercise++) {
+//   console.log(`exercise ${exercise}`);
+// }
+
+// console.log("--------------------------");
+
+// let rep = 1;
+// while (rep <= 10) {
+//   console.log(`exercise ${rep}`);
+
+//   rep++;
+// }
+
+// const arrayss = [];
+
+// while (arrayss[arrayss.length - 1] != 6) {
+//   let valorDado = Math.trunc(Math.random() * 6) + 1;
+
+//   if (arrayss[arrayss.length - 1] != 6) {
+//     arrayss.push(valorDado);
+//   } else if (arrayss[arrayss.length - 1] === 6) {
+//     break;
+//   } else {
+//     break;
+//   }
+// }
+
+// console.log(arrayss);
+
+// let valorDado = Math.trunc(Math.random() * 6) + 1;
+
+// while (valorDado != 6) {
+//   console.log("el dado salió:", valorDado);
+//   valorDado = Math.trunc(Math.random() * 6) + 1;
+//   if (valorDado === 6) {
+//     console.log("EL DADO SALIÖ 6 QUE MARAVILLA");
+//   }
+// }
+
+// const arraysss = [valorDado];
+
+// while (valorDado != 6) {
+//   valorDado = Math.trunc(Math.random() * 6) + 1;
+//   arraysss.push(valorDado);
+// }
+
+// console.log(arraysss);
+
+// *********************************
+
+// Coding Callenge
+
+// Definir
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+// Determinar la Propina
+const calcTip = (bill) =>
+  bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+// Añadir la Propina y el Total
+for (let rep = 0; rep < bills.length; rep++) {
+  let inserTips = calcTip(bills[rep]);
+  tips.push(inserTips);
+
+  let insertTotals = inserTips + bills[rep];
+  totals.push(insertTotals);
+}
+
+// Determinar Promedio de Bills, tips, totals
+const calAverage = function (arr) {
+  let valor = 0;
+
+  for (let rep = 0; rep < arr.length; rep++) {
+    valor = valor + arr[rep];
+  }
+
+  valor = valor / arr.length;
+
+  return valor;
+};
+
+// Mostrar
+console.log(`Bills: [${bills}]`);
+console.log(`Tips: [${tips}]`);
+console.log(`Totals [${totals}]`);
+
+console.log(`Promedio de Bills: ${calAverage(bills)}`);
+console.log(`Promedio de Tips: ${calAverage(tips)}`);
+console.log(`Promedio de Totals: ${calAverage(totals)}`);
