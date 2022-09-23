@@ -203,6 +203,7 @@ const a = addTaxRate(0.23)
 a(100)
 */
 // ------------------------------------------------
+/*
 // Coding challenge
 'use strict'; 
 
@@ -242,3 +243,101 @@ const poll = {
 questionBTN.addEventListener('click', poll.registerNewAnswer.bind(poll))
 
 poll.displayResults.call({ answers: [5, 2, 3] }, 'string')
+*/
+// --------------------------------------------------
+// IFFE
+/*
+'use strict';
+
+const runOne = function () {
+  console.log('This will never run again');
+}
+
+runOne();
+
+(function () {
+  console.log('This will nover run again');
+})();
+*/
+// ------------------------------------------------------------------------------
+// Closure
+
+/*
+
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    // let passengerCount = 100;
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  }
+}
+
+const booker = secureBooking();
+
+booker();
+booker();
+booker();
+console.dir(booker);
+
+// Example 1
+let f;
+
+const g = function () {
+  const a = 23;
+
+  f = function () {
+    console.log(a * 2);
+  }
+}
+
+const h = function () {
+  const b = 700;
+
+    f = function () {
+      console.log(b * 2);
+    };
+}
+
+g();
+f();
+console.dir(f);
+
+h()
+f()
+console.dir(f);
+
+// Example 2
+const boardPassengers = function (n, wait) {
+  const perGroup = n / 3;
+
+  setTimeout(function () {
+    console.log(`We are now boarding all ${n} passengers`);
+    console.log(`There are 3 groups, each with ${perGroup} passengers`);
+  }, wait * 1000)
+
+  console.log(`Will star boarding in ${wait} seconds`);
+}
+
+const perGroup = 1000;
+boardPassengers(180, 3)
+
+*/
+
+// ---------------------------------------------
+// Coding Challenge
+'use strict';
+
+ (function () {
+   const header = document.querySelector('h1');
+   console.log(header);
+   header.style.color = 'red';
+
+   document.body.addEventListener('click', () => {
+    //  const header = document.querySelector('h1');
+     console.log(document.body);
+     header.style.color = 'blue';
+   })
+
+ })()
