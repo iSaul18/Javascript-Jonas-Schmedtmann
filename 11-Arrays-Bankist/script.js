@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // BANKIST APP
@@ -447,158 +447,15 @@ const arrayMetodos = function () {
 };
 
 console.log(arrayMetodos());
+*/
 
-
-
-// labelBalance.addEventListener('click', function () {
-//   const movementsUI = Array.from(
-//     document.querySelectorAll('.movements__value'),
-//     el => Number(el.textContent.replace('€', '$')));
+/*
+labelBalance.addEventListener('click', function () {
+  const movementsUI = Array.from(
+    document.querySelectorAll('.movements__value'),
+    el => Number(el.textContent.replace('€', '$')));
   
-//   // console.log([...document.querySelectorAll('.movements__value')]);
-//   console.log(movementsUI);
-// });
-*/
-// -------------------------
-
-// Practices
-const account1 = {
-  owner: 'Jonas Schmedtmann',
-  movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
-  interestRate: 1.2, // %
-  pin: 1111,
-};
-
-const account2 = {
-  owner: 'Jessica Davis',
-  movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
-  interestRate: 1.5,
-  pin: 2222,
-};
-
-const account3 = {
-  owner: 'Steven Thomas Williams',
-  movements: [200, -200, 340, -300, -20, 50, 400, -460],
-  interestRate: 0.7,
-  pin: 3333,
-};
-
-const account4 = {
-  owner: 'Sarah Smith',
-  movements: [430, 1000, 700, 50, 90],
-  interestRate: 1,
-  pin: 4444,
-};
-
-const accounts = [account1, account2, account3, account4];
-
-// Practice 1
-/*
-const totalMovements = accounts.flatMap(acc => acc.movements).filter(mov => mov > 0).reduce((a, b) => a + b, 0);
-console.log(totalMovements);
-*/
-// Practice 2
-/*
-// V1
-const movementsInfCien = accounts.flatMap(acc => acc.movements).filter(mov => mov >= 1000).length;
-console.log(movementsInfCien);
-// V2
-const movementsInfCien2 = accounts.flatMap(acc => acc.movements).reduce((a, b) => b >= 1000 ? a+=1 : a ,0);
-console.log(movementsInfCien2);
-let a = 10;
-console.log(a++);
-console.log(a++, a);
-console.log(a);
-*/
-// Practice 3
-/*
-'user strict';
-
-const depositsTotals = accounts
-  .flatMap((account) => account.movements)
-  .reduce((sum, curr) => {
-    sum[curr > 0 ? 'deposits' : 'withdrawals'] += curr;
-    return sum
-  } , { deposits: 0, withdrawals: 0,});
-
-console.log(depositsTotals);
-*/
-// Practice 4
-/*
-const convertTitleCase = function (title) {
-  const capitalize = str => str[0].toUpperCase() + str.slice(1);
-  const exceptions = ['an','and', 'a', 'the', 'but', 'or', 'on', 'in', 'with'] ;
-
-  const titleCase = title
-    .trim()
-    .toLowerCase()
-    .split(' ')
-    .map(a => {
-    return exceptions.includes(a) ? a : capitalize(a);
-    }).join(' ');
-  
-  return capitalize(titleCase);
-};
-
-console.log(convertTitleCase('this is a nice title'));
-console.log(convertTitleCase('this a LONG TItlte but not too long'));
-console.log(convertTitleCase('and here is another title with and EXaMple'));
-*/
-
-// ------------------------------------------------------------------------------
-// Coding challenge 4
-
-const dogs = [
-  { weight: 22, curFood: 250, owners: ['Alice', 'Bob'] },
-  { weight: 8, curFood: 200, owners: ['Matilda'] },
-  { weight: 13, curFood: 275, owners: ['Sarah', 'John'] },
-  { weight: 32, curFood: 340, owners: ['Michael'] },
-];
-
-// 1
-dogs.forEach(dog => (dog.recommendFood = Math.trunc(dog.weight ** 0.75 * 28)));
-// 2
-console.log(dogs.find(dog => dog.owners.includes('Sarah')));
-console.log(dogs[1]);
-// 3
-dogs.forEach(dog => {
-  const { recommendFood, curFood } = dog;
-  if (Math.abs(recommendFood - curFood) <= recommendFood * 0.1)
-    dog.diet = 'eatSalud';
-  else dog.diet = curFood - recommendFood > 0 ? 'eatMuch' : 'eatLow';
+  // console.log([...document.querySelectorAll('.movements__value')]);
+  console.log(movementsUI);
 });
-
-const getDiet = dieta => {
-  return dogs.filter(dog => dog.diet === dieta);
-};
-const ownersEatTooMuch = getDiet('eatMuch');
-const ownersEatTooLittle = getDiet('eatLow');
-const ownersEatTooSalud = getDiet('eatSalud');
-
-// 4
-console.log(`Los perros de: 
-  ${ownersEatTooMuch.flatMap(dog => dog.owners).join(' and ')} Comen Poco`);
-
-console.log(`Los perros de: 
-${ownersEatTooLittle.flatMap(dog => dog.owners).join(' and ')} Comen Poco`);
-
-// 5
-console.log(
-  'Existe algun perro que esté comiendo exactamente lo indicado? ' +
-    dogs.some(dog => dog.diet === dog.recommendFood)
-);
-
-// 6
-console.log(
-  'Existe algun perro que esté comiendo saludable? ' +
-    (ownersEatTooSalud.length > 0)
-);
-
-// 7
-console.log(ownersEatTooSalud);
-
-// 8
-const order = dogs
-  .slice(0)
-  .sort((a, b) => (a.recommendFood > b.recommendFood ? 1 : -1));
-console.log(order);
+*/
